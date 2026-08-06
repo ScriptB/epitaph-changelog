@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Epitaph — Patch Notes 0.9.345–358</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Epitaph · Patch Notes</div>
+    <h1>Update 0.9.345–358</h1>
+    <p>A plain-language look at this stretch of updates. For the full development log, see <code>HISTORY.md</code>.</p>
+  </header>
+
+  <div class="card">
+    <span class="tag">Generators</span>
+    <h2><span class="icon">📤</span> Auto-Collect generators no longer get stuck</h2>
+    <p>An Auto-Collect generator could occasionally get permanently stuck with a real product sitting uncollected on its pad, redirecting all future output into a Buffer that eventually filled up. It now recovers on its own and reliably delivers into a waiting hopper or chest.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Plots</span>
+    <h2><span class="icon">⏸️</span> Pause your generators and spawners independently</h2>
+    <p>A new Plot Permissions option lets you pause all Generators or all Spawners on your plot separately, then turn either back on whenever you want, with everything picking up exactly where it left off.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Staff</span>
+    <h2><span class="icon">🧑‍💼</span> Staff can now help manage any plot's permissions</h2>
+    <p>Staff and Admin can now open and edit any plot's permissions, groups, and members directly, including plots whose owner is currently offline, through a new tool in the Staff menu.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Bug Fixes</span>
+    <h2><span class="icon">🐛</span> Plot Member commands and admin tools fully fixed</h2>
+    <ul>
+      <li><code>/plot home</code> and every other plot command now correctly work for a Plot Member, not just the original owner.</li>
+      <li>Admin plot search now correctly finds a Member's shared plot, not just an original owner's.</li>
+      <li>A repeatedly-denied action on a plot no longer racks up a temporary ban faster than intended from a single click.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <a href="./index.html">← All patch notes</a> &nbsp;·&nbsp; See <a href="../HISTORY.md">HISTORY.md</a> for the complete development log.
+  </footer>
+</div>
+</body>
+</html>

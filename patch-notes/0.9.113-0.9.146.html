@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Epitaph — Patch Notes 0.9.113–146</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Epitaph · Patch Notes</div>
+    <h1>Update 0.9.113–146</h1>
+    <p>The earliest stretch of updates this changelog series covers. A plain-language look at what changed for players across this range. For the full, warts-and-all development log, see <code>HISTORY.md</code>.</p>
+  </header>
+
+  <div class="card">
+    <span class="tag">Plots &amp; Permissions</span>
+    <h2><span class="icon">🔐</span> Trust became real, per-permission access</h2>
+    <p>Plot access used to be all-or-nothing: someone was either trusted or they weren't. It's now five separate toggles — build, break, containers, generators, and managing trust itself — so you can let a friend use your chests without also letting them mine your build, or the other way around.</p>
+    <p>A player-search screen was added too, so granting someone access doesn't require them to already be on a list first.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Generators &amp; Spawners</span>
+    <h2><span class="icon">⛏️</span> Generators no longer sit empty between cycles</h2>
+    <p>A generator's output slot used to just sit as bare air between harvests. It now fills with a placeholder block and a bit of smoke so it reads as "working," not "broken." Mob generators also got a "Show Spawn Radius" button in their hub, so building a proper containment box around a spawner no longer means guessing.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">PvP</span>
+    <h2><span class="icon">⚔️</span> Kit Disparity and a real PvP Zone</h2>
+    <p>The gear-gap protection that stops a heavily-kitted player from farming a fresh one got several real fixes — claiming kits out of order no longer lowers your protection, and it now also reflects your actual current gear, not just whatever kit you last claimed.</p>
+    <p>A new PvP Zone was added too: an admin-configured area where that gear-gap protection turns off entirely and kills pay bonus EXP and cash, for anyone who wants a genuine free-for-all spot.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Market &amp; Shops</span>
+    <h2><span class="icon">🛍️</span> Sell receipts, market rates, and a pre-sell preview</h2>
+    <p>Selling now gives you a real itemized receipt instead of a flat "sold N stacks" message, and always points you toward Player Shops as the better long-term option. <code>/market rates</code> was added so you can check flat NPC prices without digging through the guide book, and <code>/market sell</code> now shows a preview of what's actually sellable before it places the chest.</p>
+    <p>The old "Bazaar" name for player-run shops was dropped in favor of just calling them Player Shops.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Plot Flight</span>
+    <h2><span class="icon">🕊️</span> Plot Flight went through a few false starts</h2>
+    <p>Flight on your own plot was rebuilt more than once trying to fix players getting stuck flying after leaving their plot. It landed on a fix that forces the game to properly sync your flight state the moment you leave, so you actually stop flying when you're supposed to.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Progression</span>
+    <h2><span class="icon">📈</span> Level Shop, bigger Storage tiers, and Plot Crystal</h2>
+    <p>A new Level Shop spends real vanilla XP (not your Epitaph EXP) on cosmetics and temporary potion-style boosts, unlocked once you hit level 30. Generator Storage got two new top tiers for players who wanted even bigger buffers. And Plot Crystal is a one-time purchase that gives every generator on your plot a flat speed boost at once, instead of upgrading each one individually.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Bug Fixes</span>
+    <h2><span class="icon">🐛</span> A real batch of quality-of-life fixes</h2>
+    <ul>
+      <li>Generator leveling (the slow passive yield bonus every generator earns over time) was fully turned back on after being disabled.</li>
+      <li>Several menus, including Plot Permissions, stopped randomly closing on you mid-search.</li>
+      <li>Creative-mode players could no longer sell items or dodge the PvP gear-gap check by accident.</li>
+      <li>Netherite Block and several other block generators were producing far too slowly, and now run at their intended speed.</li>
+      <li>Picking up a wild mob spawner no longer crashes the menu.</li>
+      <li>A duplication exploit around illegally placed blocks was closed.</li>
+    </ul>
+    <p class="why">None of these added anything new, but each one was something players had actually run into.</p>
+  </div>
+
+  <footer>
+    <a href="./index.html">← All patch notes</a> &nbsp;·&nbsp; See <a href="../HISTORY.md">HISTORY.md</a> for the complete development log.
+  </footer>
+</div>
+</body>
+</html>

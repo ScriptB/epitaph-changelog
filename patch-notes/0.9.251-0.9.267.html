@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Epitaph — Patch Notes 0.9.251–267</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Epitaph · Patch Notes</div>
+    <h1>Update 0.9.251–267</h1>
+    <p>A plain-language look at this stretch of updates. For the full development log, see <code>HISTORY.md</code>.</p>
+  </header>
+
+  <div class="card">
+    <span class="tag">Economy</span>
+    <h2><span class="icon">💸</span> <code>/pay</code> rebuilt again — real autocomplete, fairer tax</h2>
+    <p><code>/pay</code> finally got genuine tab-completion for player names. The flat 7% tax was replaced with a scaling one: small payments are taxed lightly, very large transfers are taxed much more heavily, so the tax actually matches how much money is actually moving.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">HUD</span>
+    <h2><span class="icon">📱</span> The stats board is now readable on console and mobile</h2>
+    <p>The corner stats board could render far too large on some platforms, sometimes cutting off your cash balance entirely. It's been resized, and the on-screen leaderboard was replaced with a new <code>/lb</code> command — <code>/lb cash</code>, <code>/lb exp</code>, <code>/lb kill</code>, or <code>/lb death</code> — so the board itself stays small.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Ranks</span>
+    <h2><span class="icon">🎖️</span> Bigger EXP and cash bonuses for Beta Tester, Creator, and Admin</h2>
+    <p>Beta Tester and Creator now get a genuine +100% on all EXP and cash earned. Admins get +600% EXP specifically, and can now actually earn EXP from PvP kills at all, which they previously couldn't.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Generators</span>
+    <h2><span class="icon">⛰️</span> Ore generators were broken, and it's fixed</h2>
+    <p>Every Gold, Lapis, Emerald, and Diamond Ore generator had been silently producing nothing at all since an earlier update switched them to giving raw ore instead of ore blocks. That's fixed — they now correctly produce their real output again.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Plots</span>
+    <h2><span class="icon">🔎</span> Find Plot by Name added for staff</h2>
+    <p>A new admin/staff tool lets you search for a specific plot by owner name directly, instead of needing to browse the full plot list.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Server Stability</span>
+    <h2><span class="icon">🛠️</span> A real fix for lag while exploring</h2>
+    <p>Every active Player Shop used to permanently keep its chunk loaded, which added up across the map and could make the realm feel laggy no matter where you actually were. Shops now only load on demand, closing off a real, ongoing source of background lag.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Security Fix</span>
+    <h2><span class="icon">🛡️</span> The PvP Zone bonus never actually worked, until now</h2>
+    <p>A full codebase review found that the PvP Zone's gear-gap bypass and kill bonus had never actually activated for any configured zone, ever, due to a comparison bug. It's fixed and now works as intended.</p>
+  </div>
+
+  <footer>
+    <a href="./index.html">← All patch notes</a> &nbsp;·&nbsp; See <a href="../HISTORY.md">HISTORY.md</a> for the complete development log.
+  </footer>
+</div>
+</body>
+</html>

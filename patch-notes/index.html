@@ -4,108 +4,31 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Epitaph — Patch Notes</title>
-<style>
-  :root {
-    --bg: #0f1115;
-    --panel: #171a21;
-    --panel-border: #262b36;
-    --text: #e8eaed;
-    --muted: #9aa3b2;
-    --accent: #b98cf0;
-    --tag-bg: #232838;
-  }
-  @media (prefers-color-scheme: light) {
-    :root {
-      --bg: #f6f5fb;
-      --panel: #ffffff;
-      --panel-border: #e3e1ee;
-      --text: #1c1c22;
-      --muted: #5c5f6b;
-      --accent: #7a3fd6;
-      --tag-bg: #f0ecfb;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.55;
-  }
-  .wrap {
-    max-width: 780px;
-    margin: 0 auto;
-    padding: 48px 20px 80px;
-  }
-  header { margin-bottom: 32px; }
-  header .eyebrow {
-    color: var(--accent);
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    font-size: 0.78rem;
-    margin-bottom: 8px;
-  }
-  h1 {
-    margin: 0 0 12px;
-    font-size: 2rem;
-    letter-spacing: -0.01em;
-  }
-  header p {
-    color: var(--muted);
-    max-width: 60ch;
-    margin: 0;
-  }
-  ul.list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  ul.list li { margin-bottom: 12px; }
-  ul.list a {
-    display: block;
-    background: var(--panel);
-    border: 1px solid var(--panel-border);
-    border-radius: 12px;
-    padding: 16px 20px;
-    color: var(--text);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.05rem;
-  }
-  ul.list a:hover { border-color: var(--accent); }
-  ul.list .latest {
-    display: inline-block;
-    background: var(--tag-bg);
-    color: var(--accent);
-    font-size: 0.68rem;
-    font-weight: 700;
-    padding: 2px 8px;
-    border-radius: 999px;
-    letter-spacing: 0.03em;
-    margin-left: 10px;
-    vertical-align: middle;
-  }
-  footer {
-    margin-top: 32px;
-    color: var(--muted);
-    font-size: 0.85rem;
-  }
-  footer a { color: var(--accent); text-decoration: none; }
-  footer a:hover { text-decoration: underline; }
-</style>
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <div class="wrap">
   <header>
     <div class="eyebrow">Epitaph · Patch Notes</div>
     <h1>All updates</h1>
-    <p>One page per update, newest first. Each one covers just what changed for players, in plain language.</p>
+    <p>Grouped into readable chunks rather than one page per single version bump, newest first. Each one covers just what changed for players, in plain language, going all the way back to the start of this changelog series.</p>
   </header>
 
   <ul class="list">
-    <li><a href="./0.9.359-360.html">Update 0.9.359–360<span class="latest">Latest</span></a></li>
+    <li><a href="./0.9.359-360.html"><span class="title">Update 0.9.359–360</span><span class="latest">Latest</span><span class="range">Generator sacrifice, rotating Market, team name tags</span></a></li>
+    <li><a href="./0.9.345-0.9.358.html"><span class="title">Update 0.9.345–358</span><span class="range">Auto-Collect fixed, pause your generators, Staff plot tools</span></a></li>
+    <li><a href="./0.9.328-0.9.344.html"><span class="title">Update 0.9.328–344</span><span class="range">Plot Member replaces Team, Multi-Spawn reworked, more anti-dupe</span></a></li>
+    <li><a href="./0.9.308-0.9.327.html"><span class="title">Update 0.9.308–327</span><span class="range">Trial Locator added, full permissions rewrite</span></a></li>
+    <li><a href="./0.9.288-0.9.307.html"><span class="title">Update 0.9.288–307</span><span class="range">The Selly Stick, pet protection, real healing, solid plot borders</span></a></li>
+    <li><a href="./0.9.268-0.9.287.html"><span class="title">Update 0.9.268–287</span><span class="range">EXP from mobs, the Sell Stick, Plot Teams, combat-log bans</span></a></li>
+    <li><a href="./0.9.251-0.9.267.html"><span class="title">Update 0.9.251–267</span><span class="range">Smarter /pay, readable HUD, rank bonuses, ore generators fixed</span></a></li>
+    <li><a href="./0.9.234-0.9.250.html"><span class="title">Update 0.9.234–250</span><span class="range">Plot holograms, cheaper upgrades, spawner fixes</span></a></li>
+    <li><a href="./0.9.214-0.9.233.html"><span class="title">Update 0.9.214–233</span><span class="range">Command cleanup, six new kits, choose your plot biome</span></a></li>
+    <li><a href="./0.9.198-0.9.213.html"><span class="title">Update 0.9.198–213</span><span class="range">Java-style combat, faster plot claiming, /rtp and /tpa</span></a></li>
+    <li><a href="./0.9.185-0.9.197.html"><span class="title">Update 0.9.185–197</span><span class="range">Multi-item shops, redesigned Raid Nights, WAILA added</span></a></li>
+    <li><a href="./0.9.167-0.9.184.html"><span class="title">Update 0.9.167–184</span><span class="range">Combat-log fixes, PvP kit ladder, shop signs finally work</span></a></li>
+    <li><a href="./0.9.147-0.9.166.html"><span class="title">Update 0.9.147–166</span><span class="range">Portal &amp; spawner fixes, Permission Groups, Ranks &amp; Kits</span></a></li>
+    <li><a href="./0.9.113-0.9.146.html"><span class="title">Update 0.9.113–146</span><span class="range">Real plot permissions, Level Shop, Plot Crystal</span></a></li>
   </ul>
 
   <footer>
