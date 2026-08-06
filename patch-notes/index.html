@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Epitaph — Patch Notes</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --panel: #171a21;
+    --panel-border: #262b36;
+    --text: #e8eaed;
+    --muted: #9aa3b2;
+    --accent: #b98cf0;
+    --tag-bg: #232838;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f6f5fb;
+      --panel: #ffffff;
+      --panel-border: #e3e1ee;
+      --text: #1c1c22;
+      --muted: #5c5f6b;
+      --accent: #7a3fd6;
+      --tag-bg: #f0ecfb;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+  }
+  .wrap {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 48px 20px 80px;
+  }
+  header { margin-bottom: 32px; }
+  header .eyebrow {
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    margin-bottom: 8px;
+  }
+  h1 {
+    margin: 0 0 12px;
+    font-size: 2rem;
+    letter-spacing: -0.01em;
+  }
+  header p {
+    color: var(--muted);
+    max-width: 60ch;
+    margin: 0;
+  }
+  ul.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul.list li { margin-bottom: 12px; }
+  ul.list a {
+    display: block;
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+  }
+  ul.list a:hover { border-color: var(--accent); }
+  ul.list .latest {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 999px;
+    letter-spacing: 0.03em;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+  footer {
+    margin-top: 32px;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Epitaph · Patch Notes</div>
+    <h1>All updates</h1>
+    <p>One page per update, newest first. Each one covers just what changed for players, in plain language.</p>
+  </header>
+
+  <ul class="list">
+    <li><a href="./0.9.359-360.html">Update 0.9.359–360<span class="latest">Latest</span></a></li>
+  </ul>
+
+  <footer>
+    Looking for the full, unedited development log instead? See <a href="../HISTORY.md">HISTORY.md</a>.
+  </footer>
+</div>
+</body>
+</html>

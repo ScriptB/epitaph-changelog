@@ -6,6 +6,7 @@ This repository is a **public devlog**, not a distribution channel:
 
 - 📜 **[HISTORY.md](./HISTORY.md)** — the complete, unedited development history: every feature, bug fix, and piece of research, recorded as it happened.
 - 🆕 **[recent-changes.html](./recent-changes.html)** — a short, plain-language summary of the most recent updates.
+- 🧾 **[patch-notes/](./patch-notes/index.html)** — one page per update, newest first, for members who just want to know what changed this time.
 
 **There is no downloadable add-on file and no source code here.** This repo exists purely to document how the project has evolved.
 
