@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Epitaph — Patch Notes 0.9.361–371</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Epitaph · Patch Notes</div>
+    <h1>Update 0.9.361–371</h1>
+    <p>A plain-language look at this stretch of updates. For the full, warts-and-all development log, see <code>HISTORY.md</code> in this repository.</p>
+    <div class="snapshot">Snapshot: <strong>August 7, 2026</strong> (confirmed)</div>
+  </header>
+
+  <div class="card">
+    <span class="tag">Plots</span>
+    <h2>Deleting or resetting a plot actually clears it now, and the ground looks real again</h2>
+    <p>Deleting or resetting a plot used to leave a mess behind — sometimes the old build just stayed standing, and even when it cleared, what got left in its place didn't look right. Both are fixed. The whole plot area is properly wiped now, and what gets built in its place is real-looking terrain: rolling ground instead of a flat slab, the right surface for wherever it is (grass, sand, snow), water if the spot is naturally ocean or coastal instead of a dry pit, and actual layered stone, deepslate, ore, and cave systems underneath if you dig down. It's also fast — the whole process finishes in a few seconds now instead of hanging.</p>
+    <p class="why">So a fresh plot always starts clean and looks like it belongs there, no matter where it lands.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Generators &amp; Economy</span>
+    <h2>Iron and Redstone generators added, and every price got a real look</h2>
+    <p>Two new generator types: Iron and Redstone, both ore and block versions. At the same time, every generator's price and speed got rebalanced so each tier is actually worth considering, instead of there being one obvious best buy regardless of budget. Quartz Block generators were retired — if you owned one, it's already been auto-refunded with a permanent speed bonus added to your plot.</p>
+    <ul>
+      <li>Plots now have a generator limit. You can raise it in <code>/market</code> → Plot Upgrades.</li>
+      <li>Owning a lot of the exact same generator type gets slightly less efficient the more you stack — a gentle nudge toward a mixed plot instead of one giant printer.</li>
+      <li>Sacrificing a generator still works once your plot's hit the +50% speed cap — you just get the cash refund, no further speed bonus.</li>
+      <li>Auto-Collect now runs a little slower than collecting by hand — it's still real convenience, just not a strictly better option than playing manually.</li>
+    </ul>
+    <p class="why">So there's always a next generator worth saving up for, not one printer everyone eventually just copies.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Generators &amp; Economy</span>
+    <h2>Diamond, Netherite, Emerald, and Ancient Debris generators are gone</h2>
+    <p>All four were fully retired — removed automatically from every plot that had one, with a full cash refund plus a permanent speed bonus for the rest of your generators in exchange. Gold Block is now the top of the shop.</p>
+    <p class="why">Keeps diamonds and netherite tied to actually mining and fighting for them, not something you can passively print.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Plots</span>
+    <h2>Claiming a plot is instant now</h2>
+    <p>Picking a biome (or "No preference") used to sometimes mean a real wait while the addon searched for a good spot live, right as you asked for one. That search now runs constantly in the background before anyone even claims, so a spot is already sitting ready the moment you pick — claiming just hands it to you, no delay.</p>
+    <p class="why">It's the first thing anyone does on the server, and it should feel instant.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Security Fixes</span>
+    <h2>Closed another duplication trick, added detection for a sneaky one</h2>
+    <p>Pushing a hopper and a dropper together with a piston to set up a duplication loop no longer works. Separately, there's now a background check that flags to admins if a player's inventory grows in a way that matches the classic "force-quit mid-crafting" duplication trick — not an automatic punishment, just a real alert with the numbers so an admin can look into it.</p>
+    <p>Also: Plot Members can now remove a generator or spawner on a shared plot even if they weren't the one who personally placed it — previously only the original placer could, which didn't match how co-ownership is supposed to work everywhere else.</p>
+    <p class="why">Keeps the economy honest without punishing anyone for playing normally.</p>
+  </div>
+
+  <footer>
+    <a href="./index.html">All patch notes</a> &nbsp;·&nbsp; See <a href="../HISTORY.md">HISTORY.md</a> for the complete development log.
+  </footer>
+</div>
+</body>
+</html>
