@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Epitaph — Patch Notes 0.9.372–377</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Epitaph · Patch Notes</div>
+    <h1>Update 0.9.372–377</h1>
+    <p>A plain-language look at this stretch of updates. For the full, warts-and-all development log, see <code>HISTORY.md</code> in this repository.</p>
+    <div class="snapshot">Snapshot: <strong>August 7, 2026</strong> (confirmed)</div>
+  </header>
+
+  <div class="card">
+    <span class="tag">Moderation</span>
+    <h2>Being banned from a plot actually removes you from it now</h2>
+    <p>Repeatedly breaking the rules on someone else's plot is supposed to get you knocked out and locked out of that plot for a while. It never actually worked — the push that's supposed to physically remove you was silently failing every single time, so a "banned" player just stood there like nothing happened. Fixed. The knockback now genuinely fires, so crossing the threshold actually gets you removed.</p>
+    <p class="why">So repeat troublemakers actually get put outside, not just told to stop.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Plot Protection</span>
+    <h2>Villagers on your plot are properly protected again</h2>
+    <p>There was a gap where a newer type of villager wasn't recognized by the protection system at all, so it could be hit and killed by anyone regardless of your plot's permissions. Fixed — every villager and wandering trader on your plot is now covered by the same permission check as everything else.</p>
+    <p class="why">Your villagers shouldn't be an exception to your own plot's rules.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Spawners</span>
+    <h2>Spawner boxes protect instantly now, and read walls more accurately</h2>
+    <p>Building or adjusting a containment wall around a spawner used to take up to 20 seconds to actually stop spawns outside it, even though it looked fully sealed the moment you finished. That gap is closed — a wall protects the instant it's there. Wall detection itself also got more accurate, so oddly-shaped blocks like stairs are read correctly instead of occasionally being treated as open space.</p>
+    <p class="why">A grinder should be safe to stand in the second you place the last block, not twenty seconds later.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Plots</span>
+    <h2>Plot name tags sit centered above your plot again</h2>
+    <p>The floating name (or team name) above a plot had drifted toward wherever the owner was standing and bobbed up and down depending on nearby terrain — reverted back to a fixed spot centered above the plot. It only moves now if something is actually built in the way, climbing just high enough to clear it.</p>
+    <p class="why">One predictable place to look for it, every time.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Plot Protection</span>
+    <h2>Lava and water buckets can't be used to grief your plot anymore</h2>
+    <p>A lava or water bucket used to completely bypass plot permissions — anyone could empty one onto your build regardless of whether they had access. That's fixed: placing lava or water now requires the same build permission as placing an ordinary block. Nothing already in the world was touched — this only stops new griefing, it's not a lava-removal pass.</p>
+    <p class="why">You shouldn't need to babysit your own plot to stop someone burning it down.</p>
+  </div>
+
+  <footer>
+    <a href="./index.html">All patch notes</a> &nbsp;·&nbsp; See <a href="../HISTORY.md">HISTORY.md</a> for the complete development log.
+  </footer>
+</div>
+</body>
+</html>
