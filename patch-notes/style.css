@@ -77,10 +77,6 @@ header .snapshot strong { color: var(--text); font-weight: 600; }
   align-items: center;
   gap: 10px;
 }
-.card h2 .icon {
-  font-size: 1.3rem;
-  line-height: 1;
-}
 .tag {
   display: inline-block;
   background: var(--tag-bg);
